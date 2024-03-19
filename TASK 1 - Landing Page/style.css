@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+nav{
+    max-width: 1620px;
+    width: 90%;
+}
+
+/* ........................ Navbar Start ........................ */
+nav{
+    width: 100%;
+    height: 4rem;
+    background-color: #F8BBD0;
+    position: fixed;
+}
+nav ul{
+    float: right;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+    padding: 8px 16px;
+}
+.logo{
+    width: 100px;
+    margin-left: 25px;
+}
+#checkbtn{
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+    margin-right: 23px;
+}
+#check{
+    display: none;
+}
+nav ul li a:hover{
+    color: blue;
+    font-weight: bold;
+}
+nav ul li .active{
+    color: blue;
+    font-weight: bold;
+}
+
+/*.......................... Header Start .................*/
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #F8BBD0;
+    background-size: cover;
+}
+.header-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 140px;
+    padding: 23px;
+}
+.header-left{
+    display: flex;
+    flex-direction: row;
+}
+.social-meadia-link li a i{
+    margin-bottom: 23px;
+    font-size: 24px;
+    color: red;
+    animation: logoAni forwards 1s ease;
+}
+.social-meadia-link{
+    margin-right: 45px;
+}
+.social-meadia-link li a i:hover{
+    color: blue;
+    font-size: 30px;
+    font-weight: bold;
+}
+.main-content{
+    animation: mainCont forwards 1s ease;
+}
+.main-content h1{
+    font-size: 24px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    margin-bottom: 8px;
+}
+.main-content p{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.main-content p1{
+    font-size: 17px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    
+}
+.button{
+    font-size: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    width: 190px;
+    max-width: fit-content;
+    text-align: center;
+    height: 34px;
+    padding: 6px;
+    background-color: pink;
+    border: 1px solid green;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: navy;
+    color: white;
+}
+.btn1{
+    background-color: black;
+    color: white;
+}
+.car-image{
+    max-width: 700px;
+    animation: carAni forwards 1s ease;
+    opacity: 0;
+}
+
+/*................................Main Section ................*/
+.main-section{
+    background-color: white;
+    background-size: cover;
+    height: 100vh;
+}
+.heading{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.car-collections{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-y: auto;
+}
+.car{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.car img{
+    width: 130p;
+    height: 120px;
+    margin-right: 14px;
+    cursor: pointer;
+}
+.Q8{
+    height: 100px !important;
+}
+.e-tron-GT{
+    max-height: 360px;
+}
+.e-tron{
+    max-height: 620px;
+    max-width: 280px;
+}
+.A4{
+    height: 90px !important;
+}
+.A5{
+    max-height: 500px;
+}
+.A6{
+    max-height: 530px;
+}
+.car p{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.explore-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    width: 400px;
+    height: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.explore-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 18px;
+}
+.ex-heading{
+    font-size: 34px;
+    font-family: sans-serif;
+}
+.button-ex{
+    background-color: transparent;
+    width: 160px;
+    height: 48px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid black;
+    margin-top: 10px;
+    cursor: pointer;
+}
+/*......................... Footer .............*/
+.footer{
+    display: flex;
+    justify-content:space-between;
+    background-color: black;
+    padding: 20px;
+    margin-top: 20px;
+}
+.models{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-heading{
+    font-size: 36px;
+    color: white;
+    margin-bottom: 12px;
+    font-family: Josefin Slab; 
+    margin-top: 30px;
+}
+.models li a{
+    font-size: 14px;
+    gap: 10px;
+    color: white;
+    font-family: 'Calibri';
+    list-style: none;
+    text-decoration: none;
+}
+.models li a:hover{
+    color: cadetblue;
+}
+
+
+
+@keyframes carAni{
+    0%{
+        transform: translate(180px, -300px) scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+    }
+}
+@keyframes logoAni {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes mainCont{
+    0%{
+        transform: translateX(-100px) scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0) scale(1);
+        opacity: 1;
+    }
+}
+
+/*......................... Mobile Approach ...........*/
+
+@media (max-width: 600px) {
+    #checkbtn{
+        display: block;
+    }
+    nav ul{
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        position: fixed;
+        background-color: #2c3e50;
+        left: -100%;
+        text-align: center;
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        transition: all .5s;
+        
+    }
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    #check:checked ~ ul{
+        left: 0%;
+    }
+    .car-image{
+        max-width: 400px;
+        animation: carAni;
+        opacity: 1;
+    }
+    .main-content{
+        animation: mainCont;
+    }
+    .main-content h1{
+        font-size: 16px;
+    }
+    .main-content p{
+        font-size: 12px;
+    }
+    .main-content p1{
+        font-size: 12px;
+    }
+    .button{
+        font-size: 6px;
+        margin-right: 4px;
+        margin-top: 10px;
+        width: 100px;
+        max-width: fit-content;
+        text-align: center;
+        height: 28px;
+        padding: 4px;
+        background-color: pink;
+        border: 1px solid green;
+        cursor: pointer;
+    }
+    .btn1{
+        background-color: black;
+        color: white;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 80vh;
+        background-color: #F8BBD0;
+        background-size: cover;
+    }
+    .header-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:0px;
+        padding: 23px;
+    }
+    .social-meadia-link li a i{
+        margin-bottom: 15px;
+        font-size: 20px;
+        color: red;
+        animation: logoAni;
+    }
+    .main-section{
+        background-color: white;
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+    }
+    .explore-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 80vh;
+    }
+    .image{
+        width: 350px;
+        height: 300px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    .ex-heading{
+        font-size: 18px;
+    }
+    .button-ex{
+        background-color: transparent;
+        width: 120px;
+        height: 34px;
+        text-align: center;
+        font-size: 12px;
+        margin-top: 8px;
+    }
+    .footer{
+        flex-wrap: wrap;
+        background-color: black;
+        background-size: cover;
+        width: 100vw;
+    }
+    .footer-heading{
+        font-size: 20px;
+        margin-top: 8px;
+    }
+    .models li a{
+        font-size: 10px;
+        gap: 8px;
+    }
+    .logo{
+        width: 70px;
+    }
+  }
